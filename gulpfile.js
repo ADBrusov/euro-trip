@@ -17,6 +17,7 @@ var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
 var del = require("del");
 var server = require("browser-sync").create();
+var ghPages = require("gulp-gh-pages");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -118,3 +119,8 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("build", "server"));
+
+gulp.task("deploy", function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
