@@ -1,0 +1,86 @@
+.feedback {
+  position: relative;
+
+  padding: 208px 0 63px;
+
+  &::after {
+    content: url("../img/prices-background.jpg");
+    position: absolute;
+    top: 138px;
+    left: 12px;
+    z-index: -1;
+  }
+}
+
+.feedback__container {
+  width: 656px;
+  margin-right: -12px;
+  margin-left: auto;
+  padding: 50px 50px 48px;
+
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+}
+
+.feedback__title {
+  margin: 0 0 12px;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: #141517;
+}
+
+.feedback__description {
+  margin: 0 0 23px;
+
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #141517;
+}
+
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feedback__input {
+  box-sizing: border-box;
+  width: 269px;
+  padding: 15px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #141517;
+
+  border: 1px solid rgba(44, 46, 63, 0.3);
+
+  &:first-child {
+    margin-right: 18px;
+    padding: 15px 15px  15px 25px;
+  }
+}
+
+.feedback__button {
+  margin-top: 24px;
+  padding: 18px 40px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: #fe7865;
+  border: 0;
+
+  &:hover {
+    background-color: #f17d4b;
+    cursor: pointer;
+  }
+}

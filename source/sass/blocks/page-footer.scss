@@ -1,0 +1,14 @@
+.page-footer__container {
+  display: flex;
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 177px 0 70px;
+}
+
+.page-footer__section {
+  &:not(:last-child) {
+    border-right: 1px solid #d7d9df;
+    width: 398px;
+  }
+}

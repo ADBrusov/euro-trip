@@ -1,0 +1,29 @@
+.some-countries {
+  padding-left: 13px;
+}
+
+.some-countries__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #141517;
+  margin: 0 0 20px;
+}
+
+.some-countries__container {
+  display: flex;
+}
+
+.some-countries__section {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.some-countries__country {
+  margin: 0 0 10px;
+}

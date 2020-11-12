@@ -1,0 +1,102 @@
+.plan {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 370px;
+  height: 672px;
+  padding: 38px 30px 30px 30px;
+
+  background: #ffffff;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+
+  &:hover {
+    border: 3px solid #fe7865;
+  }
+
+  &:hover .plan__title,
+  &:hover .plan__price {
+    color: #fe7865;
+  }
+
+  &:hover .plan__feature-icon {
+    fill: #fe7865;
+  }
+}
+
+.plan__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px 0;
+}
+
+.plan__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  color: rgba(20, 21, 23, 0.7);
+  letter-spacing: -1.27px;
+}
+
+.plan__price {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: right;
+  color: rgba(20, 21, 23, 0.7);
+}
+
+.plan__description {
+  width: 290px;
+  margin: 0 0 59px 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #2c2e3f;
+}
+
+.plan__features {
+  padding-left: 29px;
+
+  list-style: none;
+  font-size: 16px;
+  line-height: 32px;
+  color: #2c2e3f;
+}
+
+.plan__feature {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.plan__feature-icon {
+  position: absolute;
+  top: 3px;
+  left: -30px;
+}
+
+.plan__button-buy {
+  width: 310px;
+  margin-top: auto;
+  padding: 30px 69px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: #fe7865;
+  border: none;
+
+  &:hover {
+    background-color: #f17d4b;
+    cursor: pointer;
+  }
+}
